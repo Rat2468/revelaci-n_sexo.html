@@ -33,6 +33,11 @@
             color: #FFC107;
         }
 
+        p {
+            font-size: 1.2rem;
+            color: #ddd;
+        }
+
         .gender-options {
             display: flex;
             justify-content: space-around;
@@ -54,11 +59,11 @@
             background-color: #ff3399;
         }
 
-        .boy {
+        .team-azul {
             background-color: #007BFF;
         }
 
-        .boy:hover {
+        .team-azul:hover {
             background-color: #3399ff;
         }
 
@@ -73,12 +78,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>Revelación de Sexo - ¡Vota Ahora!</h1>
-        <p>El día 25 de noviembre de 2024, descubre con nosotros si será un niño o una niña. ¡Escoge tu predicción!</p>
+        <h1>Revelación de Sexo de BEATRIZ Y FRANKLIN</h1>
+        <p>El día 25 de noviembre de 2024, acompáñanos en la gran revelación. ¡Escoge tu equipo!</p>
 
         <div class="gender-options">
-            <button class="boy" onclick="vote('Niño')">Creo que será Niño</button>
-            <button class="girl" onclick="vote('Niña')">Creo que será Niña</button>
+            <button class="team-azul" onclick="vote('TEAM Azul')">TEAM Azul</button>
+            <button class="team-rosa" onclick="vote('TEAM Rosa')">TEAM Rosa</button>
         </div>
 
         <div id="message" style="margin-top: 20px; font-size: 1.2rem;"></div>
@@ -89,9 +94,9 @@
     </div>
 
     <script>
-        function vote(gender) {
+        function vote(team) {
             const message = document.getElementById('message');
-            message.innerHTML = "¡Gracias por votar! Crees que será " + gender + ".";
+            message.innerHTML = "¡Gracias por votar! Eres del " + team + ".";
         }
     </script>
 </body>
